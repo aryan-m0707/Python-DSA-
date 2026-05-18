@@ -1,0 +1,45 @@
+---------------------------------------------------------------------------------------------------
+Data Structure are different ways of organizing data on your computer that can be used effectively
+---------------------------------------------------------------------------------------------------
+
+Algorithm Important Steps
+1.Correctness 2.Efficiency
+
+Big O -> Worst case
+Big omega -> Best case
+Big theta -> Average case
+
+O(1) -> constant time
+ex: array = [1, 2, 3, 4, 5]
+array[0] // It take constant time to access element
+ex: HashMap
+
+O(N) -> Linear time
+ex: array = [1, 2, 3, 4, 5]
+for element in array:
+    print(element) 
+// Linear time since it is visiting every element of array
+// ex: Linear Search
+
+O(LogN) -> Logarithmic time
+ex: array = [1, 2, 3, 4, 5]
+for index in range(0,len(array),3):
+    print(array[index]) 
+// Logarithmic time since it is visiting only some element 
+// ex: Binary Search
+
+O(N2) -> Quadratic time
+ex: array = [1, 2, 3, 4, 5]
+for x in array:
+    for y in array:
+        print(x,y) 
+// Locking at a every index in the array twice
+// ex: Nested Loop
+
+O(2N) -> Exponential time
+ex: fatorial(5)
+def factorial(x):
+    if x==1 or x==1 : return 1
+    return x*factorial(x-1)
+// Locking at a every index in the array twice
+// ex: Nested Loop

@@ -1,0 +1,25 @@
+#stack implementation without size limit
+#stack implementation with size limit
+
+----------------------------------------------------------------
+
+class  --->  is a way to bind your members function (method) and data members (variable)
+self -----> is use to access current object of the class
+object ----> is referance varibale
+for one object constructor call only one time
+----------------------------------------------------------------
+
+#Stack implementation without size limit
+
+#Stack implements in two ways
+A.List/Array
+B.LinkedList
+
+#Stack Operations
+1. Push
+2. Pop
+3. Peek
+4. isEmpty
+5. isFull
+6. Delete
+7. Display
