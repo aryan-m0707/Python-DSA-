@@ -1,0 +1,31 @@
+# Queue implementation
+# 1. Enqueqe
+# 2. Dequeqe
+# 3. Display Queue
+# 4. isEmpty()
+# 5. isFull()
+# 6. delete
+# 7. peek
+
+                                STACK 
+
+                            Time complexity                 Space complexity
+create stack                      O(1)                             O(1)
+push                            O(1)/O(N2)                         O(1)
+pop                               O(1)                             O(1)
+peek                              O(1)                             O(1)
+isEmpty                           O(1)                             O(1)
+delete                            O(1)                             O(1)
+
+
+                                QUEUE
+                                
+                            Time complexity                 Space complexity
+create Queue                      O(1)                             O(1)
+Enqueqe                         O(1)/O(N)                          O(1)
+Dequeqe                         O(1)/O(N)                          O(1)
+peek                              O(1)                             O(1)
+isEmpty                           O(1)                             O(1)
+delete                            O(1)                             O(1)
+
+
