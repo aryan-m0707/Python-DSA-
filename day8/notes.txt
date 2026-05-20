@@ -1,0 +1,31 @@
+--------------------Binary Tree-----------------------
+
+Types of Binary Tree:
+
+1.Full Binary Tree
+    Each node has either 0 or 2 children
+    No node has a single child
+2.Complete Binary Tree
+    All level expect possibly the last are completely filled
+    Node in the last level are filled from the left to right
+3.Perfect Binary Tree
+    All internal nodes have exactly two nodes
+    All leaf nodes are at the same level
+4.Balance Tree
+
+
+----------PreOrder Traversal-------------
+    root ----> left ----> right
+
+----------PostOrder Traversal-------------
+    left ----> right ----> root
+
+----------InOrder Traversal-------------
+    left ----> root ----> right
+
+---------Level Order Traveling------------
+  Traverse level by level, Top to Bottom 
+
+
+---->   Why binary search Tree?
+---->   it performs faster than Binary Tree, when inserting and deleting node

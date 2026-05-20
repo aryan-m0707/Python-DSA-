@@ -35,6 +35,34 @@ class LinkedList:
             self.node.next=self.head
             self.head=self.node
             print('added')
+
+    def addBet(self,value,index):
+        self.node=Node(value)
+        if self.head==None:
+            self.head=self.node
+            self.tail=self.node
+        elif index==0:
+            self.addBeg(value)
+        else:
+            temp=self.head
+            count=0
+            while temp!=None:
+                if index-1 == count:
+                    self.node.next=temp.next
+                    temp.next=self.node
+                    break
+                temp=temp.next
+                count+=1
+            
+    def addEnd(self,val):
+        self.node=Node(val)
+        if self.head==None:
+            self.head=self.node
+            self.tail=self.node
+        else:
+            self.tail.next=self.node
+            self.tail=self.node
+        
     
 
         
@@ -57,15 +85,16 @@ if __name__=='__main__':
         elif ch == 2:
             value=int(input('Enter value for node :'))
             object.addBeg(value)
-            print('Node added successfully')
+            print('Node added at begining successfully')
         elif ch == 3:
             value=int(input('Enter value for node :'))
-            object.addNode(value)
-            print('Node added successfully')
+            index=int(input('Enter index, where you want to insert node :'))
+            object.addBet(value, index)
+            print('Node added at between successfully')
         elif ch == 4:
             value=int(input('Enter value for node :'))
-            object.addNode(value)
-            print('Node added successfully')
+            object.addEnd(value)
+            print('Node added at End of list successfully')
         elif ch == 5:
             object.display()
         elif ch == 6:

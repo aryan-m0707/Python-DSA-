@@ -1,0 +1,63 @@
+https://roadmap.sh/datastructures-and-algorithms
+
+george hotz--->hacker
+
+Python set(): Check if len(set(your_string)) == 1. Since a set only stores unique values, a string with one unique character will result in a set of length one.
+
+recursion--------> when the main problem can be divided into in similar sub problem, then we use recursion
+it's use the stack memory
+
+--------------Tree--------------
+
+Tree represent in two types:
+1. Array/List
+2. LinkedList
+
+---------------complecity------------
+
+
+
+--------------Questions---------------
+https://www.hackerrank.com/challenges/insert-a-node-at-the-tail-of-a-linked-list/problem
+https://www.hackerrank.com/challenges/insertionsort1/problem
+https://www.hackerrank.com/challenges/recursive-digit-sum/problem
+
+
+n = int(input().strip())
+
+arr = list(map(int, input().rstrip().split()))
+
+------------------------------------------Common runtime complexities---------------------------------------------------------
+Common runtime complexities, ordered from most to least efficient, include:\
+(O(1)\) — Constant Time: The runtime stays the same regardless of the input size.
+Example: Accessing an array element by its index.\
+(O(\log n)\) — Logarithmic Time: The runtime grows slowly; it increases by a constant amount 
+each time the input size doubles.
+Example: Binary search in a sorted array.
+\(O(n)\) — Linear Time: The runtime increases proportionally to the input size.
+Example: Iterating through a list once to find a value.\
+(O(n \log n)\) — Quasilinear Time: This is common for efficient sorting algorithms.
+Example: Merge Sort or Heapsort.
+\(O(n^2)\) — Quadratic Time: The runtime grows proportionally to the square of the input size,
+ often seen with nested loops.
+ Example: Bubble Sort or Selection Sort.
+ \(O(2^n)\) — Exponential Time: The runtime doubles with each addition to the input set.
+ Example: Recursive calculations of Fibonacci numbers.
+ \(O(n!)\) — Factorial Time: The runtime grows extremely fast, 
+ making it impractical for all but the smallest inputs.
+ Example: Solving the Traveling Salesperson Problem via brute force.
+
+
+
+
+ def merge_sort(arr):
+    if len(arr) <= 1:
+        return arr
+
+    mid = len(arr) // 2
+    left = merge_sort(arr[:mid])  # Divide (Log n levels)
+    right = merge_sort(arr[mid:])
+
+    return merge(left, right)  # Combine (Takes n operations per level)
+
+    

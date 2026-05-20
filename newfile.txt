@@ -1,0 +1,6 @@
+ERROR:root:division by zero
+Traceback (most recent call last):
+  File "d:\RBU\DSA\python\day8\fileHandling\careteFile.py", line 6, in <module>
+    print(a/b)
+          ~^~
+ZeroDivisionError: division by zero
