@@ -1,0 +1,23 @@
+# Hashing is a technique used to convert data into a fixed-size value called a hash value and hash code.
+# it's help us to store and search data very fast 
+
+# what os the hash function?
+# -> A function is convert the inpu into fixed index.
+# index = key % 10
+
+# ASCII values:
+# C = 67
+# A = 65
+# T = 84
+
+
+
+
+
+
+
+
+
+
+
+
